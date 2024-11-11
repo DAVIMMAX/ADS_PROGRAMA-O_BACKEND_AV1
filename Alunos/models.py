@@ -27,7 +27,5 @@ class Aluno (models.Model):
         blank=False
     )
     
-    cursos = models.ManyToManyField(Curso, related_name="alunos")
-    
-    objetos = models.Manager()
+    cursos = models.ManyToManyField(Curso, related_name="alunos", blank=True)
     
